@@ -46,3 +46,17 @@
     background-color: azure;
     font-size: 45px;
 }
+.wikiclass1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.fondo{
+    background-image: url(fondoestrellasparawiki.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wikibutton{
+    display: flex;
+    justify-content: center;
+}
