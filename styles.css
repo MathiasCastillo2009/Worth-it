@@ -55,11 +55,20 @@
     background-image: url(fondoestrellasparawiki.webp);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .wikibutton{
     display: flex;
     justify-content: center;
+    color: white;
 }
 .containerimg{
-    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.letrablanca{
+    color:white;
+    font-family: 'Oswald', sans-serif;
 }
