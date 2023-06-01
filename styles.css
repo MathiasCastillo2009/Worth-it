@@ -86,3 +86,6 @@
 .hoverimagenes:hover{
     background-color: rgba(87, 149, 179, 0.774);
 }
+.textodescripcionpersonaje{
+    display: contents;
+}
