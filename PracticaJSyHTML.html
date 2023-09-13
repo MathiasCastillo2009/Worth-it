@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>practicaconopmatematicas</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>CALCULADORA</h2>
+        <div class="inputs">
+            <input type="text" placeholder="Primer valor" class="ip" id="v1">
+            <input type="text" placeholder="Segundo valor" class="ip" id="v2">
+        </div>
+        <div class="buttons">
+            <button id="adicion" class="ad" style="background-color: red;" onclick="adicion()">Adición</button>
+            <button id="substraccion" class="ad" style="background-color: blue;" onclick="substraccion()">Substracción</button>
+            <button id="multiplicacion" class="ad" style="background-color: green;" onclick="multiplicacion()">Multiplicación</button>
+            <button id="division" class="ad" style="background-color: goldenrod;" onclick="division()">División</button>
+        </div>
+        <div id="respuesta">
+        </div>
+    </div>
+</body>
+<script>
+    function adicion(){
+        let valor1 = parseInt(document.getElementById("v1").value);
+        let valor2 = parseInt(document.getElementById("v2").value);
+        let resultado = valor1 + valor2;
+        let etiqueta = document.createElement("p");
+        etiqueta.id = "resultado";
+        etiqueta.innerHTML = resultado;
+        document.getElementById("respuesta").appendChild(etiqueta);
+    }
+    function substraccion(){
+        let valor1 = parseInt(document.getElementById("v1").value);
+        let valor2 = parseInt(document.getElementById("v2").value);
+        let resultado = valor1 - valor2;
+        let etiqueta = document.createElement("p");
+        etiqueta.id = "resultado";
+        etiqueta.innerHTML = resultado;
+        document.getElementById("respuesta").appendChild(etiqueta);
+    }
+    function multiplicacion(){
+        let valor1 = parseInt(document.getElementById("v1").value);
+        let valor2 = parseInt(document.getElementById("v2").value);
+        let resultado = valor1 * valor2;
+        let etiqueta = document.createElement("p");
+        etiqueta.id = "resultado";
+        etiqueta.innerHTML = resultado;
+        document.getElementById("respuesta").appendChild(etiqueta);
+    }
+    function division(){
+        let valor1 = parseInt(document.getElementById("v1").value);
+        let valor2 = parseInt(document.getElementById("v2").value);
+        let resultado = valor1 / valor2;
+        let etiqueta = document.createElement("p");
+        etiqueta.id = "resultado";
+        etiqueta.innerHTML = resultado;
+        document.getElementById("respuesta").appendChild(etiqueta);
+    }
+</script>
+</html>

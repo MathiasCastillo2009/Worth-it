@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor" id="container">
+        <h2>Formulario</h2>
+        <div class="contenedor_formulario">
+            <label for="Nombre">Nombre</label>
+            <div>
+                <input type="text" placeholder="Nombre" class="ip" id="Nombre" required>
+                <p class="requisito" id="alertnombre">Tu nombre debe tener mas de 2 caracteres</p>
+            </div>
+            <label for="Apellido">Apellido</label>
+            <div>
+                <input type="text" placeholder="Apellido" class="ip" id="Apellido">
+                <p class="requisito" id="alertapellido">Tu Apellido debe tener mas de 2 caracteres</p>
+            </div>
+            <label for="nac">Fecha de nacimiento</label>
+            <div>
+                <input type="date" placeholder="Fecha de nacimiento" class="ip" id="nac">
+                <p class="requisito" id="alertnac">Obligatorio</p>
+            </div>
+            <label for="User">Usuario</label>
+            <div>
+                 <input type="text" placeholder="Usuario" class="ip" id="User">
+                <p class="requisito" id="alertuser">Tu nombre debe tener mas de 4 caracteres</p>
+            </div>
+            <label for="Paises">Paises</label>
+            <select name="Paises" id="Paises" class="paises">  
+                <option value="-">-</option>
+                <option value="ArabiaSaudita">Arabia Saudita</option>
+                <option value="Peru">Perú</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brazil">Brazil</option>
+              </select>
+         </div>
+        <button type="button" id="emitir">Enviar formulario</button>
+        <label for="check">accept terms of service</label>
+        <input type="checkbox" id="check" required>
+    </div>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
